@@ -95,5 +95,7 @@ userSchema.methods.correctPassword = async function (
   return true;
 };
 
+userSchema.methods.resetPassword = async function () {};
+
 const Users = mongoose.model("users", userSchema);
 module.exports = Users;
